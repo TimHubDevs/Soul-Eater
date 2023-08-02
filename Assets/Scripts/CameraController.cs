@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    float rotationX = 0f;
-    float rotationY = 0f;
-
     public GameObject Camera1;
     public GameObject Camera2;
-
-
     public float sensivity = 8f;
+    float rotationX = 0f;
+    float rotationY = 0f;
 
     private void Update()
     {
