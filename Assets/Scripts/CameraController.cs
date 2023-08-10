@@ -4,22 +4,33 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public GameObject Camera1;
-    public GameObject Camera2;
+    //public GameObject Camera1;
+    //public GameObject Camera2;
     public float sensivity = 8f;
-    float rotationX = 0f;
-    float rotationY = 0f;
+    public Transform Player;
+    private float rotationX = 0f;
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
     private void Update()
     {
-        rotationY += Input.GetAxis("Mouse X") * sensivity;
-        rotationX += Input.GetAxis("Mouse Y") * sensivity * -1;
-        transform.localEulerAngles = new Vector3(rotationX, rotationY, 0);
+        float mouseY = Input.GetAxis("Mouse Y") * sensivity * Time.deltaTime;
+        float mouseX = Input.GetAxis("Mouse X") * sensivity * Time.deltaTime;
 
-        if (Input.GetKeyDown("v"))
-        {
-            Camera1.SetActive(!Camera1.activeInHierarchy);
-            Camera2.SetActive(!Camera2.activeInHierarchy);
-        }
+        rotationX -= mouseY;
+        rotationX = Mathf.Clamp(rotationX, -90f, 90f);
+
+        transform.localRotation = Quaternion.Euler(rotationX,0f,0f);
+        Player.Rotate(Vector3.up * mouseX);
+
+
+        //if (Input.GetKeyDown("v"))
+        //{
+        //Camera1.SetActive(!Camera1.activeInHierarchy);
+        //Camera2.SetActive(!Camera2.activeInHierarchy);
+        //}
     }
 }
