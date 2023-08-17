@@ -8,17 +8,26 @@ public class SpawnEnemy : MonoBehaviour
     public GameObject[] Enemy;
     private int maxEnemies = 30;
     private int currentEnemies = 0;
+    private bool spawning = false; 
     // Start is called before the first frame update
     void Start()
     {
-        
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (currentEnemies < maxEnemies)
+        if (Input.GetKeyDown(KeyCode.Space) && currentEnemies < maxEnemies && !spawning)
+        {
+            spawning = true; 
+            StartCoroutine(SpawnEnemiesCoroutine());
+        }
+    }
+
+    IEnumerator SpawnEnemiesCoroutine()
+    {
+        for (int i = 0; i < maxEnemies; i++)
         {
             int randomIndex = Random.Range(0, Enemy.Length);
             GameObject selectedObject = Enemy[randomIndex];
@@ -29,10 +38,10 @@ public class SpawnEnemy : MonoBehaviour
 
             Instantiate(selectedObject, Rposition, selectedObject.transform.rotation);
             currentEnemies++;
+            yield return new WaitForSeconds(0.1f);
         }
-        
 
+        spawning = false; 
     }
 }
-
 
