@@ -16,7 +16,7 @@ namespace SoulEater.Logic {
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                enemyController.playerClose = true;
+                //enemyController.playerClose = true;
             }
         }
 
