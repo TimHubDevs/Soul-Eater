@@ -2079,6 +2079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a259ff7120040448f37db8a9433d1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SoulPrefab: {fileID: 4774685989534378765, guid: 5f1832bf83921604c897fbb91de0b686,
+    type: 3}
 --- !u!1 &9216675129808772283
 GameObject:
   m_ObjectHideFlags: 0
