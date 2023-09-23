@@ -8,6 +8,7 @@ namespace SoulEater.UI
     {
         [SerializeField] private TextMeshProUGUI _soulsText;
         [SerializeField] private GameObject _devConsole;
+        [SerializeField] private GameObject _inventoryWindow;
     
         private void Start()
         {
@@ -19,6 +20,10 @@ namespace SoulEater.UI
             if (Input.GetKeyDown(KeyCode.Tab))
             {
                 _devConsole.SetActive(!_devConsole.activeInHierarchy);
+            }
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                _inventoryWindow.SetActive(!_inventoryWindow.activeInHierarchy);
             }
         }
 

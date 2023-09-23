@@ -37,9 +37,9 @@ namespace SoulEater.Logic
 
                 if (enemy != null)
                 {
-                    float randX = Random.Range(-xRangeSpawn, xRangeSpawn);
-                    float randZ = Random.Range(-zRangeSpawn, zRangeSpawn);
-                    Vector3 randomPosition = new Vector3(randX, 0, randZ);
+                    float randX = Random.Range(-xRangeSpawn + parentLumberjacksTransform.position.x, xRangeSpawn + parentLumberjacksTransform.position.x);
+                    float randZ = Random.Range(-zRangeSpawn+ parentLumberjacksTransform.position.z, zRangeSpawn+ parentLumberjacksTransform.position.z);
+                    Vector3 randomPosition = new Vector3(randX, parentLumberjacksTransform.position.y, randZ);
                     enemy.transform.position = randomPosition;
                     enemy.SetActive(true);
                 }
