@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/BrokenVector/LowPolyTreePack/Materials/Fall.mat.meta
 guid: a62e8da5194101042a4d89028ef6f912
 timeCreated: 1457641386
+========
+guid: 5ecd7133f7ba36249886189848c01188
+timeCreated: 1491478993
+>>>>>>>> cea0f34 (ForestTerrainZakhar):Assets/Third party/Nature Realistic Props Pack/Prefabs/Rock2.prefab.meta
 licenseType: Store
 NativeFormatImporter:
   userData: 

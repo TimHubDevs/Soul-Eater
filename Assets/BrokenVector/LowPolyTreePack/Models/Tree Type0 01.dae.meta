@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/BrokenVector/LowPolyTreePack/Models/Tree Type0 01.dae.meta
 guid: d2821924b86cff5439f12b0289585dbf
 timeCreated: 1457641006
+========
+guid: 775b436109580664e9d5d8c6e933e49c
+timeCreated: 1489233290
+>>>>>>>> cea0f34 (ForestTerrainZakhar):Assets/Third party/Nature Realistic Props Pack/Source/Rock1/Rock1.fbx.meta
 licenseType: Store
 ModelImporter:
   serializedVersion: 19
@@ -9,11 +14,15 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
+<<<<<<<< HEAD:Assets/BrokenVector/LowPolyTreePack/Models/Tree Type0 01.dae.meta
     4300000: Tree_Type0_01_mesh
     6400000: //RootNode
     9500000: //RootNode
+========
+    4300000: "\u041A\u0443\u0431.004"
+>>>>>>>> cea0f34 (ForestTerrainZakhar):Assets/Third party/Nature Realistic Props Pack/Source/Rock1/Rock1.fbx.meta
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:

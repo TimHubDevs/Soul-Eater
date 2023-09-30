@@ -7,14 +7,25 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:Assets/BrokenVector/LowPolyTreePack/Materials/Fall.mat
   m_Name: Fall
+========
+  m_Name: No Name
+>>>>>>>> cea0f34 (ForestTerrainZakhar):Assets/Third party/Nature Realistic Props Pack/Source/Rock3/Materials/No Name.mat
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _EMISSION
+<<<<<<<< HEAD:Assets/BrokenVector/LowPolyTreePack/Materials/Fall.mat
   m_InvalidKeywords:
   - _GLOSSYREFLECTIONS_OFF
+========
+  - _METALLICSPECGLOSSMAP
+  - _NORMALMAP
+  m_InvalidKeywords:
+  - _METALLICGLOSSMAP
+>>>>>>>> cea0f34 (ForestTerrainZakhar):Assets/Third party/Nature Realistic Props Pack/Source/Rock3/Materials/No Name.mat
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -27,11 +38,19 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
+<<<<<<<< HEAD:Assets/BrokenVector/LowPolyTreePack/Materials/Fall.mat
         m_Texture: {fileID: 2800000, guid: 99897f7919c46fc43969a2a130434315, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
+========
+        m_Texture: {fileID: 2800000, guid: 40b193b0e9052f349b196dfd405c5909, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 49cdb03d72c26e44d9504719570649df, type: 3}
+>>>>>>>> cea0f34 (ForestTerrainZakhar):Assets/Third party/Nature Realistic Props Pack/Source/Rock3/Materials/No Name.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -51,11 +70,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
+<<<<<<<< HEAD:Assets/BrokenVector/LowPolyTreePack/Materials/Fall.mat
         m_Texture: {fileID: 0}
+========
+        m_Texture: {fileID: 2800000, guid: 40b193b0e9052f349b196dfd405c5909, type: 3}
+>>>>>>>> cea0f34 (ForestTerrainZakhar):Assets/Third party/Nature Realistic Props Pack/Source/Rock3/Materials/No Name.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 1bcc68dd48af7f9499ab769baf320f6c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -97,18 +120,25 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
+<<<<<<<< HEAD:Assets/BrokenVector/LowPolyTreePack/Materials/Fall.mat
     - _EmissionScaleUI: 0
+========
+>>>>>>>> cea0f34 (ForestTerrainZakhar):Assets/Third party/Nature Realistic Props Pack/Source/Rock3/Materials/No Name.mat
     - _EnvironmentReflections: 1
-    - _GlossMapScale: 0
-    - _Glossiness: 0
-    - _GlossyReflections: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+<<<<<<<< HEAD:Assets/BrokenVector/LowPolyTreePack/Materials/Fall.mat
     - _Smoothness: 0
+========
+    - _Smoothness: 1
+>>>>>>>> cea0f34 (ForestTerrainZakhar):Assets/Third party/Nature Realistic Props Pack/Source/Rock3/Materials/No Name.mat
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -120,11 +150,18 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<<< HEAD:Assets/BrokenVector/LowPolyTreePack/Materials/Fall.mat
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &6814804978848304117
+========
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+  m_BuildTextureStacks: []
+--- !u!114 &7451778927800621453
+>>>>>>>> cea0f34 (ForestTerrainZakhar):Assets/Third party/Nature Realistic Props Pack/Source/Rock3/Materials/No Name.mat
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

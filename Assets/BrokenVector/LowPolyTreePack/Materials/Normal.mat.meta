@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/BrokenVector/LowPolyTreePack/Materials/Normal.mat.meta
 guid: fe3e3b8ebc1a32647b48b7ea88f534a8
 timeCreated: 1457641391
+========
+guid: 02afbb342378206458673a6738c8a40b
+timeCreated: 1491478995
+>>>>>>>> cea0f34 (ForestTerrainZakhar):Assets/Third party/Nature Realistic Props Pack/Prefabs/Rock3.prefab.meta
 licenseType: Store
 NativeFormatImporter:
   userData: 
