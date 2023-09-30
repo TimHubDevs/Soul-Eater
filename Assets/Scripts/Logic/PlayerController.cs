@@ -24,10 +24,10 @@ namespace SoulEater.Logic
             if (other.gameObject.tag == "Soul")
             {
                 _playerData.SoulsCount++;
-                other.gameObject.SetActive(false);
+                other.gameObject.SetActive(true);
                 
                 //ui
-                _battleCanvas.UpdateSoulsCount(_playerData.SoulsCount);
+                //_battleCanvas.UpdateSoulsCount(_playerData.SoulsCount);
                 
                 PlayerPrefsData.SetSoulsCount(_playerData.SoulsCount);
             }

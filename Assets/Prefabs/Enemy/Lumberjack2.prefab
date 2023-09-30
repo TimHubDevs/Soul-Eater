@@ -1916,6 +1916,7 @@ GameObject:
   - component: {fileID: 5465646997257604729}
   - component: {fileID: 8422171780058125454}
   - component: {fileID: 1061261872384604247}
+  - component: {fileID: 4222144837954230236}
   m_Layer: 0
   m_Name: Lumberjack2
   m_TagString: Untagged
@@ -2019,7 +2020,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a259ff7120040448f37db8a9433d1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoulPrefab: {fileID: 4774685989534378765, guid: 5f1832bf83921604c897fbb91de0b686,
+  soulPrefab: {fileID: 4774685989534378765, guid: 5f1832bf83921604c897fbb91de0b686,
+    type: 3}
+  rangeDistance: 5
+  playerTransform: {fileID: 409598281277020300, guid: 8c2a3ea7ca400154089ce9b9db35c72b,
     type: 3}
 --- !u!54 &1061261872384604247
 Rigidbody:
@@ -2048,6 +2052,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!195 &4222144837954230236
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8549327225542971485}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &8754901868015923562
 GameObject:
   m_ObjectHideFlags: 0
