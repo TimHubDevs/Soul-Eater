@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Resources/NewLayer.terrainlayer.meta
 guid: ac7558ddf47efcb4e9ff2bcb310aa748
+========
+guid: 3f8f4fed5739aab44825f58e9151027b
+>>>>>>>> cea0f34 (ForestTerrainZakhar):Assets/Third party/TerrainDemoScene_URP/Terrain/Layers/Black_Sand_Rocks_B.terrainlayer.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 8574412962073106934

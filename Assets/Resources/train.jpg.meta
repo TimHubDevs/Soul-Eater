@@ -5,7 +5,7 @@ TextureImporter:
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
-    mipMapMode: 0
+    mipMapMode: 1
     enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
@@ -21,7 +21,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
-  streamingMipmaps: 0
+  streamingMipmaps: 1
   streamingMipmapsPriority: 0
   vTOnly: 0
   ignoreMasterTextureLimit: 0
@@ -67,7 +67,11 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+<<<<<<<< HEAD:Assets/Resources/train.jpg.meta
     maxTextureSize: 2048
+========
+    maxTextureSize: 512
+>>>>>>>> cea0f34 (ForestTerrainZakhar):Assets/Third party/TerrainSampleAssets/Textures/Details/Grass_A_MaskMap.tif.meta
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -102,8 +106,13 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+<<<<<<<< HEAD:Assets/Resources/train.jpg.meta
     buildTarget: Android
     maxTextureSize: 2048
+========
+    buildTarget: Server
+    maxTextureSize: 512
+>>>>>>>> cea0f34 (ForestTerrainZakhar):Assets/Third party/TerrainSampleAssets/Textures/Details/Grass_A_MaskMap.tif.meta
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
