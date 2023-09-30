@@ -7,22 +7,12 @@ namespace SoulEater.Logic {
     {
         [SerializeField] private EnemyController enemyController;
 
-    void Start()
-        {
-
-        }
-
         public void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.CompareTag("Player"))
             {
                 //enemyController.playerClose = true;
             }
-        }
-
-        void Update()
-        {
-
         }
     }
 }
