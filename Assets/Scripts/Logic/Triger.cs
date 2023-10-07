@@ -16,7 +16,7 @@ namespace SoulEater.Logic
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                Enemycontroler.PlayerClose = true;
+                //Enemycontroler.PlayerClose = true;
             }
         }
         // Update is called once per frame
