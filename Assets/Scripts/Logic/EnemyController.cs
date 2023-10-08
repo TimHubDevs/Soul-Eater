@@ -3,15 +3,14 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
-    private Vector3 startPosition;
     [SerializeField] private GameObject SoulPrefab;
-    //public bool PlayerClose;
     [SerializeField] private Transform movePosit;
-    [SerializeField] float rangeDistance;
+    [SerializeField] private float rangeDistance;
     public float health = 10f;
     private NavMeshAgent _navMeshAgent;
-    
-    void Start()
+    private Vector3 startPosition;
+
+    private void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
     }
@@ -21,7 +20,7 @@ public class EnemyController : MonoBehaviour
         startPosition = transform.position;
     }
 
-    void Update()
+    private void Update()
     {
         float dist = Vector3.Distance(movePosit.position, transform.position);
         if (rangeDistance >= dist)
@@ -35,7 +34,7 @@ public class EnemyController : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    { 
+    {
         if (other.gameObject.CompareTag("Sword"))
         {
             gameObject.SetActive(false);
