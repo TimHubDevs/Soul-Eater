@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using NaughtyCharacter;
 
 namespace Retro.ThirdPersonCharacter
 {
@@ -7,6 +6,7 @@ namespace Retro.ThirdPersonCharacter
     [RequireComponent(typeof(Animator))]
     public class Combat : MonoBehaviour
     {
+        [SerializeField] private PlayerSword _playerSword;
         private const string attackTriggerName = "Attack";
         private const string specialAttackTriggerName = "Ability";
 
@@ -51,6 +51,7 @@ namespace Retro.ThirdPersonCharacter
         private void SpecialAttack()
         {
             _animator.SetTrigger(specialAttackTriggerName);
+            _playerSword.Attack();
         }
     }
 }
