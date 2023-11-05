@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/Logic/EnemyController.cs.meta
+guid: 658a45e83232f6548a0a73f3938a619f
+========
+guid: 50237962b3ea329438780553008c1e4f
+>>>>>>>> cea0f34 (ForestTerrainZakhar):Assets/Third party/TerrainDemoScene_URP/Scripts/SceneAnnotation.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
