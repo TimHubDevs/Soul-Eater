@@ -1,6 +1,3 @@
-using SoulEater.Logic;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -17,7 +14,6 @@ public class EnemyController : MonoBehaviour
     private NavMeshAgent _navMeshAgent;
     private Vector3 startPosition;
     
-
     private void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
@@ -79,12 +75,10 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-
     private bool IsAttacking()
     {
         return false;
     }
-
 
     private void Die()
     {
