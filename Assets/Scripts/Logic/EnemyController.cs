@@ -3,34 +3,55 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+
     [SerializeField] private GameObject SoulPrefab;
     [SerializeField] private Transform movePosit;
     [SerializeField] private float rangeDistance;
+    [HideInInspector] public bool PlayerClose;
+    [HideInInspector] public bool existInTriger;
+    [HideInInspector] public bool startStalker;
     public float health = 10f;
     private NavMeshAgent _navMeshAgent;
     private Vector3 startPosition;
-
+    
     private void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
-    }
-
-    private void OnEnable()
-    {
-        startPosition = transform.position;
+        PlayerClose = false;
+        Transform objTransform = transform;
+        startPosition = objTransform.position;
     }
 
     private void Update()
     {
         float dist = Vector3.Distance(movePosit.position, transform.position);
-        if (rangeDistance >= dist)
+
+        if (existInTriger && startStalker)
         {
             _navMeshAgent.destination = movePosit.position;
         }
-        else if (rangeDistance < dist && transform.position != startPosition)
+        else
         {
-            _navMeshAgent.destination = startPosition;
+            if (rangeDistance >= dist)
+            {
+                PlayerClose = true;
+            }
+            else
+            {
+                PlayerClose = false;
+            }
+
+            if (PlayerClose == true)
+            {
+                _navMeshAgent.destination = movePosit.position;
+            }
+            else if (rangeDistance < dist && transform.position != startPosition)
+            {
+                PlayerClose = false;
+                _navMeshAgent.destination = startPosition;
+            }
         }
+       
     }
 
     private void OnTriggerEnter(Collider other)
@@ -54,12 +75,10 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-
     private bool IsAttacking()
     {
         return false;
     }
-
 
     private void Die()
     {

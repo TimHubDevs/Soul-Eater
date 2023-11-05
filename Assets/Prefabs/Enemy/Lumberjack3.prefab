@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 2346441007859176364}
   - component: {fileID: 1875497064555067687}
   - component: {fileID: 1692096874477170196}
-  - component: {fileID: 93447682428564222}
+  - component: {fileID: 981102585125598462}
   m_Layer: 0
   m_Name: Lumberjack3
   m_TagString: Untagged
@@ -258,7 +258,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0106721, y: 1.0104636, z: 1}
   m_Center: {x: -0.005336046, y: 0.57039934, z: 0}
---- !u!114 &93447682428564222
+--- !u!114 &981102585125598462
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,11 +267,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1065314390096296843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76a259ff7120040448f37db8a9433d1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 71ea1fdaddc8fb54f8cfea9bf281ed47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoulPrefab: {fileID: 4774685989534378765, guid: 5f1832bf83921604c897fbb91de0b686,
-    type: 3}
+  Triger: {fileID: 0}
+  SoulPrefab: {fileID: 0}
+  movePosit: {fileID: 0}
+  rangeDistance: 0
+  PlayerClose: 0
+  existInTriger: 0
+  health: 10
 --- !u!1 &1223868962820843644
 GameObject:
   m_ObjectHideFlags: 0
