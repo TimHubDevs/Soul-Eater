@@ -1,27 +1,61 @@
+using SoulEater.Logic;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+
     [SerializeField] private GameObject SoulPrefab;
-    public bool PlayerClose;
     [SerializeField] private Transform movePosit;
+    [SerializeField] private float rangeDistance;
+    [HideInInspector] public bool PlayerClose;
+    [HideInInspector] public bool existInTriger;
+    [HideInInspector] public bool startStalker;
     public float health = 10f;
     private NavMeshAgent _navMeshAgent;
+    private Vector3 startPosition;
     
-    void Start()
+
+    private void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
+        PlayerClose = false;
+        Transform objTransform = transform;
+        startPosition = objTransform.position;
     }
 
-   
-    void Update()
+    private void Update()
     {
+        float dist = Vector3.Distance(movePosit.position, transform.position);
 
-        if (PlayerClose)
+        if (existInTriger && startStalker)
         {
             _navMeshAgent.destination = movePosit.position;
         }
+        else
+        {
+            if (rangeDistance >= dist)
+            {
+                PlayerClose = true;
+            }
+            else
+            {
+                PlayerClose = false;
+            }
+
+            if (PlayerClose == true)
+            {
+                _navMeshAgent.destination = movePosit.position;
+            }
+            else if (rangeDistance < dist && transform.position != startPosition)
+            {
+                PlayerClose = false;
+                _navMeshAgent.destination = startPosition;
+            }
+        }
+       
     }
 
     private void OnTriggerEnter(Collider other)
@@ -48,14 +82,12 @@ public class EnemyController : MonoBehaviour
 
     private bool IsAttacking()
     {
-
         return false;
     }
 
 
     private void Die()
     {
-
         Destroy(gameObject);
     }
 }
