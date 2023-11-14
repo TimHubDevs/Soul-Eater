@@ -65,6 +65,14 @@ public class EnemyController : MonoBehaviour
             {
                 PlayerClose = false;
                 _navMeshAgent.destination = startPosition;
+                if (Vector3.Distance(transform.position,startPosition) < 2)
+                {
+                    animator.SetBool("IsWalking", false);
+                }
+                else
+                {
+                    animator.SetBool("IsWalking", true);
+                }
             }
         }
 
