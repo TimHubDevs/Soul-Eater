@@ -15,7 +15,6 @@ public class EnemyController : MonoBehaviour
     private NavMeshAgent _navMeshAgent;
     private Vector3 startPosition;
     private Animator animator;
-    private List<string> animations;
     [SerializeField] private bool _canAttack;
     
     private void Start()
@@ -25,14 +24,6 @@ public class EnemyController : MonoBehaviour
         Transform objTransform = transform;
         startPosition = objTransform.position;
         animator = GetComponent<Animator>();
-        animations = new List<string>()
-            {
-                "Hit1",
-                "Fall1",
-                "Attack1h1",
-                "Walk",
-                "Idle",
-            };
     }
 
     private void Update()
@@ -108,6 +99,10 @@ public class EnemyController : MonoBehaviour
                 Debug.Log("Die");
             }
             animator.SetBool("Hit", true);
+        }
+        else
+        {
+            animator.SetBool("Hit", false);
         }
         
         if (other.gameObject.CompareTag("Player"))
