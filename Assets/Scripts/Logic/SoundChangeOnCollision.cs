@@ -5,16 +5,15 @@ public class SoundChangeOnCollision : MonoBehaviour
     public AudioClip collisionSound;
     [SerializeField] private AudioSource audioSource;
 
-    private void Start()
-    {
-        audioSource.clip = collisionSound;
-    }
-
     private void OnTriggerEnter(Collider other)
     {
             if (other.gameObject.CompareTag("Player"))
             {
-                audioSource.Play();
+                if (audioSource.clip != collisionSound)
+                {
+                    audioSource.clip = collisionSound;
+                    audioSource.Play();
+                }
             }
     }
 }
