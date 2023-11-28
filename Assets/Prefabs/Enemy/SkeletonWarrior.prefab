@@ -1223,7 +1223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ea1fdaddc8fb54f8cfea9bf281ed47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoulPrefab: {fileID: 4774685989534378765, guid: 5f1832bf83921604c897fbb91de0b686,
+  SoulPrefab: {fileID: 7351060852183813016, guid: 5f1832bf83921604c897fbb91de0b686,
     type: 3}
   movePosit: {fileID: 0}
   rangeDistance: 10
@@ -1231,8 +1231,9 @@ MonoBehaviour:
   PlayerClose: 0
   existInTriger: 0
   startStalker: 0
-  health: 10
+  health: 2
   _canAttack: 0
+  collectEffect2: {fileID: 0}
 --- !u!195 &4459175999666000080
 NavMeshAgent:
   m_ObjectHideFlags: 0
