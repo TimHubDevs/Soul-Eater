@@ -1,20 +1,21 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SoundChangeOnCollision : MonoBehaviour
 {
     public AudioClip collisionSound;
     [SerializeField] private AudioSource audioSource;
 
-    private void Start()
+    void OnCollisionEnter(Collision collision)
     {
-        audioSource.clip = collisionSound;
+
+        
+
+        if (collision.gameObject.tag == "Player")
+        {
+            audioSource.Play();
+
+            Debug.Log("Объект столкнулся с игроком");
+        }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-            if (other.gameObject.CompareTag("Player"))
-            {
-                audioSource.Play();
-            }
-    }
 }
